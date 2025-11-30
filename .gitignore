@@ -1,0 +1,17 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+
+# MySQL dumps (опционально)
+*.sql
+
+# OS
+.DS_Store
+Thumbs.db
