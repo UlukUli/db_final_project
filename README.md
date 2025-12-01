@@ -24,7 +24,6 @@ DB_Final_Project/
 │── data/                # dataset
 │── database/            # MySQL dump (schema + data)
 │── docs/                # documentation
-│── presentation/        # project slides
 │── requirements.txt
 │── README.md
 ```
