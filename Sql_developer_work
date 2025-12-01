@@ -1,0 +1,56 @@
+ 1)Primary Keys (PRIMARY KEY)
+
+Each table has a PRIMARY KEY, which:
+
+uniquely identifies each record,
+
+automatically creates a clustered index,
+
+speeds up JOIN operations between tables.
+
+This is the foundation of a normalized database schema
+
+   
+
+2)Foreign Keys (FOREIGN KEY)
+
+Every foreign key is automatically indexed by MySQL.
+This speeds up connections between tables, such as:
+
+bookings.hotel_id
+
+bookings.customer_id
+
+bookings.reserved_room_id
+
+bookings.meal_id
+   
+   
+3)Indexes on frequently filtered columns
+
+is_canceled
+
+arrival_date_year
+
+arrival_date_month
+
+market_segment_id
+
+distribution_channel_id
+
+Reason: analysts often ask questions like:
+“How many bookings were canceled?”, “How many bookings were in 2017?”, “How many bookings by market segment?
+
+
+4)Indexes to speed up sorting and aggregation
+
+For example:
+
+lead_time
+
+adr
+
+booking_changes
+
+These fields are used for statistics and visualizations, so indexing them reduces computational cost.
+
