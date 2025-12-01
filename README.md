@@ -1,51 +1,71 @@
-# 📌 Hotel Booking — AI SQL Agent
+# 📌 Hotel Booking — Final Database Project
 
-AI module for the team database project based on the *hotel_bookings* dataset.  
-It converts natural language questions into SQL, executes them on MySQL, and visualizes the results.
-
----
-
-## 🚀 Features
-- 🧠 Natural Language → SQL (Gemini API)  
-- 🗄 Executes queries on MySQL  
-- 📊 Displays results and charts  
-- 📈 Generates short analytical insights  
+This repository contains a team project for the **Hotel Booking Database**.  
+The project includes database design, SQL analytics, and an AI-powered SQL agent.
 
 ---
 
-## 📂 Project Structure
+## 🧩 Team Roles
+- **Database Architect** — ERD, schema design, normalization  
+- **Data Analyst** — insights, visualizations, reporting  
+- **SQL Developer** — queries, views, stored procedures  
+- **AI Engineer** — AI SQL agent for natural-language questions
+
+---
+
+## 🗂 Project Structure
+
+```
 DB_Final_Project/
-
-├── ai_agent.ipynb
-
-├── data/hotel_bookings.csv
-
-├── database/mysql.sql
-
-├── docs/erd.png
-
-├── presentation/final_presentation.pdf
-
-└── requirements.txt
-
+│── architect/           # ERD & schema (from Architect)
+│── analyst/             # analysis, charts, insights
+│── sql_developer/       # SQL scripts
+│── ai_agent/            # AI notebook + helper scripts
+│── data/                # dataset
+│── database/            # MySQL dump (schema + data)
+│── docs/                # documentation
+│── presentation/        # project slides
+│── requirements.txt
+│── README.md
+```
 
 ---
 
-
-## 🛠️ Tech Stack
-- **Python 3.11**  
-- **MySQL + Workbench**  
+## ⚙️ Technologies Used
+- **MySQL**  
+- **Python (Jupyter Notebook)**  
 - **SQLAlchemy + PyMySQL**  
-- **Google Gemini API**  
-- **Pandas, Matplotlib**  
-- **Jupyter Notebook**  
+- **Pandas, NumPy, Seaborn, Matplotlib**  
+- **Google Gemini API** (AI → SQL)
 
 ---
 
-## 🚀 How to Run the Project
+## 💡 AI SQL Agent
+The AI module can:
+- Convert natural language into SQL  
+- Execute SQL queries on MySQL  
+- Return results as tables  
+- Generate charts and simple insights  
 
-### 1️⃣ Install dependencies
-```bash
-python -m venv venv
-venv\Scripts\activate     # Windows
-pip install -r requirements.txt
+Located in:  
+```
+/ai_agent/ai_agent.ipynb
+```
+
+---
+
+## 🚀 How to Run
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Configure `.env` file (MySQL + Gemini API keys)  
+3. Run the notebook:
+   ```
+   jupyter notebook
+   ```
+
+---
+
+## 📄 License
+For educational purposes only.
