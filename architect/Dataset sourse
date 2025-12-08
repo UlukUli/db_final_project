@@ -7,13 +7,6 @@ This data set contains:
 - booking information 
 The data is originally from the article Hotel Booking Demand Datasets, written by Nuno Antonio, Ana Almeida, and Luis Nunes for Data in Brief, Volume 22, February 2019.
 
-The data was downloaded and cleaned by Thomas Mock and Antoine Bichat for #TidyTuesday during the week of February 11th, 2020.
-
-The dataset contains:
-- ~100 000 booking records
-- 32 columns
-- information about guests, booking dates, room types, cancellations, ADR (average daily rate), meal plans, and hotel type.
-
 This dataset was chosen because:
 - it is realistic (used in hotel industry research),
 - it contains rich booking behavior,
